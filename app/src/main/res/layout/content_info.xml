@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.lauciano.dinheiroviajante.InfoActivity"
+        tools:showIn="@layout/activity_info">
+
+
+        <Spinner
+            android:id="@+id/transaction_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/types" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp"
+                android:text="@string/real"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transaction_valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                android:text="@string/zero"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/transaction_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/transaction_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/transaction_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/info" />
+
+    </LinearLayout>
+
+</ScrollView>

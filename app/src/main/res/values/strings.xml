@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DinheiroViajante</string>
+    <string name="plus_sign">+</string>
+    <string name="real">R$</string>
+    <string name="zero">0.00</string>
+    <string name="now">Há pouco</string>
+    <string name="info">Comentários sobre transação</string>
+    <string-array name="types">
+        <item>Tipo de Transação</item>
+        <item>Entrada</item>
+        <item>Saída</item>
+    </string-array>
+</resources>

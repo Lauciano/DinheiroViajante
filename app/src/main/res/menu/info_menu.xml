@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lauciano.dinheiroviajante.InfoActivity">
+
+    <item
+        android:id="@+id/confirm_info"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/plus_sign"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+</menu>
